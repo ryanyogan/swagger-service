@@ -109,3 +109,16 @@ notifying browser that file changed:  out/swagger_service/core.js
 [0mCompiling "target/cljsbuild/public/js/app.js" from ("src/cljc" "src/cljs" "env/dev/cljs")...
 notifying browser that file changed:  out/swagger_service/core.js
 [32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.192 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ("src/cljc" "src/cljs" "env/dev/cljs")...
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  out/swagger_service/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.174 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ("src/cljc" "src/cljs" "env/dev/cljs")...
+notifying browser that file changed:  out/swagger_service/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.182 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ("src/cljc" "src/cljs" "env/dev/cljs")...
+notifying browser that file changed:  out/swagger_service/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.169 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ("src/cljc" "src/cljs" "env/dev/cljs")...
+notifying browser that file changed:  out/swagger_service/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.171 seconds.[0m
