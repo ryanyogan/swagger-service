@@ -1,0 +1,91 @@
+[0mCompiling "target/cljsbuild/public/js/app.js" from ("src/cljc" "src/cljs" "env/dev/cljs")...
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  out/swagger_service/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.302 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ("src/cljc" "src/cljs" "env/dev/cljs")...
+WARNING: Use of undeclared Var swagger-service.core/init! at line 11 env/dev/cljs/swagger_service/dev.cljs
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  out/swagger_service/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.18 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ("src/cljc" "src/cljs" "env/dev/cljs")...
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  out/swagger_service/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.941 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ("src/cljc" "src/cljs" "env/dev/cljs")...
+WARNING: Use of undeclared Var swagger-service.core/​ at line 13 /Users/ryanyogan/dev/swagger-service/src/cljs/swagger_service/core.cljs
+WARNING: Use of undeclared Var swagger-service.core/​ at line 13 /Users/ryanyogan/dev/swagger-service/src/cljs/swagger_service/core.cljs
+WARNING: Use of undeclared Var swagger-service.core/​ at line 14 /Users/ryanyogan/dev/swagger-service/src/cljs/swagger_service/core.cljs
+WARNING: Use of undeclared Var swagger-service.core/​ at line 14 /Users/ryanyogan/dev/swagger-service/src/cljs/swagger_service/core.cljs
+WARNING: Use of undeclared Var swagger-service.core/​​ at line 15 /Users/ryanyogan/dev/swagger-service/src/cljs/swagger_service/core.cljs
+WARNING: Use of undeclared Var swagger-service.core/​ at line 15 /Users/ryanyogan/dev/swagger-service/src/cljs/swagger_service/core.cljs
+WARNING: Use of undeclared Var swagger-service.core/​ at line 16 /Users/ryanyogan/dev/swagger-service/src/cljs/swagger_service/core.cljs
+WARNING: Use of undeclared Var swagger-service.core/​ at line 16 /Users/ryanyogan/dev/swagger-service/src/cljs/swagger_service/core.cljs
+WARNING: Use of undeclared Var swagger-service.core/​​ at line 17 /Users/ryanyogan/dev/swagger-service/src/cljs/swagger_service/core.cljs
+WARNING: Use of undeclared Var swagger-service.core/​ at line 17 /Users/ryanyogan/dev/swagger-service/src/cljs/swagger_service/core.cljs
+notifying browser that file changed:  out/swagger_service/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.368 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ("src/cljc" "src/cljs" "env/dev/cljs")...
+WARNING: Use of undeclared Var swagger-service.core/​ at line 13 /Users/ryanyogan/dev/swagger-service/src/cljs/swagger_service/core.cljs
+WARNING: Use of undeclared Var swagger-service.core/​ at line 13 /Users/ryanyogan/dev/swagger-service/src/cljs/swagger_service/core.cljs
+WARNING: Use of undeclared Var swagger-service.core/​ at line 14 /Users/ryanyogan/dev/swagger-service/src/cljs/swagger_service/core.cljs
+WARNING: Use of undeclared Var swagger-service.core/​ at line 14 /Users/ryanyogan/dev/swagger-service/src/cljs/swagger_service/core.cljs
+WARNING: Use of undeclared Var swagger-service.core/​​ at line 15 /Users/ryanyogan/dev/swagger-service/src/cljs/swagger_service/core.cljs
+WARNING: Use of undeclared Var swagger-service.core/​ at line 15 /Users/ryanyogan/dev/swagger-service/src/cljs/swagger_service/core.cljs
+WARNING: Use of undeclared Var swagger-service.core/​ at line 16 /Users/ryanyogan/dev/swagger-service/src/cljs/swagger_service/core.cljs
+WARNING: Use of undeclared Var swagger-service.core/​ at line 16 /Users/ryanyogan/dev/swagger-service/src/cljs/swagger_service/core.cljs
+WARNING: Use of undeclared Var swagger-service.core/​​ at line 17 /Users/ryanyogan/dev/swagger-service/src/cljs/swagger_service/core.cljs
+WARNING: Use of undeclared Var swagger-service.core/​ at line 17 /Users/ryanyogan/dev/swagger-service/src/cljs/swagger_service/core.cljs
+notifying browser that file changed:  out/swagger_service/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.171 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ("src/cljc" "src/cljs" "env/dev/cljs")...
+WARNING: Use of undeclared Var swagger-service.core/​ at line 13 /Users/ryanyogan/dev/swagger-service/src/cljs/swagger_service/core.cljs
+WARNING: Use of undeclared Var swagger-service.core/​ at line 13 /Users/ryanyogan/dev/swagger-service/src/cljs/swagger_service/core.cljs
+WARNING: Use of undeclared Var swagger-service.core/​ at line 14 /Users/ryanyogan/dev/swagger-service/src/cljs/swagger_service/core.cljs
+WARNING: Use of undeclared Var swagger-service.core/​ at line 14 /Users/ryanyogan/dev/swagger-service/src/cljs/swagger_service/core.cljs
+WARNING: Use of undeclared Var swagger-service.core/​​ at line 15 /Users/ryanyogan/dev/swagger-service/src/cljs/swagger_service/core.cljs
+WARNING: Use of undeclared Var swagger-service.core/​ at line 15 /Users/ryanyogan/dev/swagger-service/src/cljs/swagger_service/core.cljs
+WARNING: Use of undeclared Var swagger-service.core/​ at line 16 /Users/ryanyogan/dev/swagger-service/src/cljs/swagger_service/core.cljs
+WARNING: Use of undeclared Var swagger-service.core/​ at line 16 /Users/ryanyogan/dev/swagger-service/src/cljs/swagger_service/core.cljs
+WARNING: Use of undeclared Var swagger-service.core/​​ at line 17 /Users/ryanyogan/dev/swagger-service/src/cljs/swagger_service/core.cljs
+WARNING: Use of undeclared Var swagger-service.core/​ at line 17 /Users/ryanyogan/dev/swagger-service/src/cljs/swagger_service/core.cljs
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  out/swagger_service/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.244 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ("src/cljc" "src/cljs" "env/dev/cljs")...
+WARNING: Use of undeclared Var swagger-service.core/​ at line 13 /Users/ryanyogan/dev/swagger-service/src/cljs/swagger_service/core.cljs
+WARNING: Use of undeclared Var swagger-service.core/​ at line 14 /Users/ryanyogan/dev/swagger-service/src/cljs/swagger_service/core.cljs
+WARNING: Use of undeclared Var swagger-service.core/​​ at line 15 /Users/ryanyogan/dev/swagger-service/src/cljs/swagger_service/core.cljs
+WARNING: Use of undeclared Var swagger-service.core/​ at line 16 /Users/ryanyogan/dev/swagger-service/src/cljs/swagger_service/core.cljs
+WARNING: Use of undeclared Var swagger-service.core/​​ at line 17 /Users/ryanyogan/dev/swagger-service/src/cljs/swagger_service/core.cljs
+WARNING: Use of undeclared Var swagger-service.core/​ at line 17 /Users/ryanyogan/dev/swagger-service/src/cljs/swagger_service/core.cljs
+notifying browser that file changed:  out/swagger_service/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.172 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ("src/cljc" "src/cljs" "env/dev/cljs")...
+WARNING: Use of undeclared Var swagger-service.core/​ at line 13 /Users/ryanyogan/dev/swagger-service/src/cljs/swagger_service/core.cljs
+WARNING: Use of undeclared Var swagger-service.core/​ at line 14 /Users/ryanyogan/dev/swagger-service/src/cljs/swagger_service/core.cljs
+WARNING: Use of undeclared Var swagger-service.core/​​ at line 15 /Users/ryanyogan/dev/swagger-service/src/cljs/swagger_service/core.cljs
+WARNING: Use of undeclared Var swagger-service.core/​ at line 16 /Users/ryanyogan/dev/swagger-service/src/cljs/swagger_service/core.cljs
+WARNING: Use of undeclared Var swagger-service.core/​​ at line 17 /Users/ryanyogan/dev/swagger-service/src/cljs/swagger_service/core.cljs
+WARNING: Use of undeclared Var swagger-service.core/​ at line 17 /Users/ryanyogan/dev/swagger-service/src/cljs/swagger_service/core.cljs
+notifying browser that file changed:  out/swagger_service/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.153 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ("src/cljc" "src/cljs" "env/dev/cljs")...
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  out/swagger_service/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.249 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ("src/cljc" "src/cljs" "env/dev/cljs")...
+notifying browser that file changed:  out/swagger_service/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.208 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ("src/cljc" "src/cljs" "env/dev/cljs")...
+notifying browser that file changed:  out/swagger_service/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.152 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ("src/cljc" "src/cljs" "env/dev/cljs")...
+notifying browser that file changed:  out/swagger_service/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.164 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ("src/cljc" "src/cljs" "env/dev/cljs")...
+notifying browser that file changed:  out/swagger_service/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.154 seconds.[0m

@@ -1,94 +1,42 @@
 (ns swagger-service.core
-  (:require [reagent.core :as r]
-            [reagent.session :as session]
-            [secretary.core :as secretary :include-macros true]
-            [goog.events :as events]
-            [goog.history.EventType :as HistoryEventType]
-            [markdown.core :refer [md->html]]
-            [swagger-service.ajax :refer [load-interceptors!]]
-            [ajax.core :refer [GET POST]])
-  (:import goog.History))
+  (:require [reagent.core :as reagent :refer [atom]]
+            [ajax.core :refer [GET]])
+  (:require-macros [secretary.core :refer [defroute]]))
 
-(defn nav-link [uri title page collapsed?]
-  [:li.nav-item
-   {:class (when (= page (session/get :page)) "active")}
-   [:a.nav-link
-    {:href uri
-     :on-click #(reset! collapsed? true)} title]])
+;;
+;; Edge Functions (Side Effects)
+;;
 
-(defn navbar []
-  (let [collapsed? (r/atom true)]
-    (fn []
-      [:nav.navbar.navbar-light.bg-faded
-       [:button.navbar-toggler.hidden-sm-up
-        {:on-click #(swap! collapsed? not)} "☰"]
-       [:div.collapse.navbar-toggleable-xs
-        (when-not @collapsed? {:class "in"})
-        [:a.navbar-brand {:href "#/"} "swagger-service"]
-        [:ul.nav.navbar-nav
-         [nav-link "#/" "Home" :home collapsed?]
-         [nav-link "#/about" "About" :about collapsed?]]]])))
+(defn fetch-links! [links link-count]
+  "Fetches links from api, returns an array the length of link-count"
+  (GET "/api/cat-links"
+    {:params  {:link-count link-count}
+     :handler #(reset! links %)}))
 
-(defn about-page []
-  [:div.container
-   [:div.row
-    [:div.col-md-12
-     "this is the story of swagger-service... work in progress"]]])
+;;
+;; Page Components
+;;
 
 (defn home-page []
-  [:div.container
-   [:div.jumbotron
-    [:h1 "Welcome to swagger-service"]
-    [:p "Time to start building your site!"]
-    [:p [:a.btn.btn-primary.btn-lg {:href "http://luminusweb.net"} "Learn more »"]]]
-   [:div.row
-    [:div.col-md-12
-     [:h2 "Welcome to ClojureScript"]]]
-   (when-let [docs (session/get :docs)]
-     [:div.row
-      [:div.col-md-12
-       [:div {:dangerouslySetInnerHTML
-              {:__html (md->html docs)}}]]])])
+  (let
+   [links (atom nil)]
+    (fetch-links! links 20)
+    (fn []
+      [:div
+       (for [link @links]
+         [:img {:src link}])])))
 
-(def pages
-  {:home #'home-page
-   :about #'about-page})
-
-(defn page []
-  [(pages (session/get :page))])
-
-;; -------------------------
-;; Routes
-(secretary/set-config! :prefix "#")
-
-(secretary/defroute "/" []
-  (session/put! :page :home))
-
-(secretary/defroute "/about" []
-  (session/put! :page :about))
-
-;; -------------------------
-;; History
-;; must be called after routes have been defined
-(defn hook-browser-navigation! []
-  (doto (History.)
-        (events/listen
-          HistoryEventType/NAVIGATE
-          (fn [event]
-              (secretary/dispatch! (.-token event))))
-        (.setEnabled true)))
-
-;; -------------------------
-;; Initialize app
-(defn fetch-docs! []
-  (GET (str js/context "/docs") {:handler #(session/put! :docs %)}))
+;;
+;; Component Mounting
+;;
 
 (defn mount-components []
-  (r/render [#'navbar] (.getElementById js/document "navbar"))
-  (r/render [#'page] (.getElementById js/document "app")))
+  (reagent/render-component [home-page] (.getElementById js/document "app")))
+
+;;
+;; App Instantiators
+;;
 
 (defn init! []
-  (load-interceptors!)
-  (fetch-docs!)
-  (hook-browser-navigation!)
   (mount-components))
+

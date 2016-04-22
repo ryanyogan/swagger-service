@@ -29,7 +29,8 @@
                  [secretary "1.2.3"]
                  [cljs-ajax "0.5.4"]
                  [metosin/compojure-api "1.0.2"]
-                 [luminus-log4j "0.1.3"]]
+                 [luminus-log4j "0.1.3"]
+                 [clj-http "2.0.0"]]
 
   :min-lein-version "2.0.0"
 
@@ -48,73 +49,73 @@
    {:app
     {:source-paths ["src/cljc" "src/cljs"]
      :compiler
-     {:output-to "target/cljsbuild/public/js/app.js"
-      :output-dir "target/cljsbuild/public/js/out"
-      :externs ["react/externs/react.js"]
+     {:output-to    "target/cljsbuild/public/js/app.js"
+      :output-dir   "target/cljsbuild/public/js/out"
+      :externs      ["react/externs/react.js"]
       :pretty-print true}}}}
-  
+
   :target-path "target/%s/"
   :profiles
-  {:uberjar {:omit-source true
-             
-              :prep-tasks ["compile" ["cljsbuild" "once"]]
-              :cljsbuild
-              {:builds
-               {:app
-                {:source-paths ["env/prod/cljs"]
-                 :compiler
-                 {:optimizations :advanced
-                  :pretty-print false
-                  :closure-warnings
-                  {:externs-validation :off :non-standard-jsdoc :off}}}}} 
-             
-             :aot :all
-             :uberjar-name "swagger-service.jar"
-             :source-paths ["env/prod/clj"]
-             :resource-paths ["env/prod/resources"]}
+  {:uberjar       {:omit-source    true
+
+                   :prep-tasks     ["compile" ["cljsbuild" "once"]]
+                   :cljsbuild
+                   {:builds
+                    {:app
+                     {:source-paths ["env/prod/cljs"]
+                      :compiler
+                      {:optimizations :advanced
+                       :pretty-print  false
+                       :closure-warnings
+                       {:externs-validation :off :non-standard-jsdoc :off}}}}} 
+
+                   :aot            :all
+                   :uberjar-name   "swagger-service.jar"
+                   :source-paths   ["env/prod/clj"]
+                   :resource-paths ["env/prod/resources"]}
    :dev           [:project/dev :profiles/dev]
    :test          [:project/test :profiles/test]
-   :project/dev  {:dependencies [[prone "1.1.1"]
-                                 [ring/ring-mock "0.3.0"]
-                                 [ring/ring-devel "1.4.0"]
-                                 [pjstadig/humane-test-output "0.8.0"]
-                                 [lein-figwheel "0.5.2"]
-                                 [lein-doo "0.1.6"]
-                                 [com.cemerick/piggieback "0.2.2-SNAPSHOT"]]
-                  :plugins      [[com.jakemccrary/lein-test-refresh "0.14.0"]
-                                 [lein-figwheel "0.5.2"]
-                                 [lein-doo "0.1.6"]
-                                 [org.clojure/clojurescript "1.8.40"]]
-                  
+   :project/dev   {:dependencies   [[prone "1.1.1"]
+                                    [ring/ring-mock "0.3.0"]
+                                    [ring/ring-devel "1.4.0"]
+                                    [pjstadig/humane-test-output "0.8.0"]
+                                    [lein-figwheel "0.5.2"]
+                                    [lein-doo "0.1.6"]
+                                    [com.cemerick/piggieback "0.2.2-SNAPSHOT"]]
+                   :plugins        [[com.jakemccrary/lein-test-refresh "0.14.0"]
+                                    [lein-figwheel "0.5.2"]
+                                    [lein-doo "0.1.6"]
+                                    [org.clojure/clojurescript "1.8.40"]]
+
                    :cljsbuild
                    {:builds
                     {:app
                      {:source-paths ["env/dev/cljs"]
                       :compiler
-                      {:main "swagger-service.app"
-                       :asset-path "/js/out"
+                      {:main          "swagger-service.app"
+                       :asset-path    "/js/out"
                        :optimizations :none
-                       :source-map true}}
+                       :source-map    true}}
                      :test
                      {:source-paths ["src/cljc" "src/cljs" "test/cljs"]
                       :compiler
-                      {:output-to "target/test.js"
-                       :main "swagger-service.doo-runner"
+                      {:output-to     "target/test.js"
+                       :main          "swagger-service.doo-runner"
                        :optimizations :whitespace
-                       :pretty-print true}}}} 
-                  
-                  :figwheel
-                  {:http-server-root "public"
-                   :nrepl-port 7002
-                   :css-dirs ["resources/public/css"]}
-                  :doo {:build "test"}
-                  :source-paths ["env/dev/clj" "test/clj"]
-                  :resource-paths ["env/dev/resources"]
-                  :repl-options {:init-ns user
-                                 :nrepl-middleware
-                                 [cemerick.piggieback/wrap-cljs-repl]}
-                  :injections [(require 'pjstadig.humane-test-output)
-                               (pjstadig.humane-test-output/activate!)]}
-   :project/test {:resource-paths ["env/dev/resources" "env/test/resources"]}
-   :profiles/dev {}
+                       :pretty-print  true}}}}
+
+                   :figwheel
+                   {:http-server-root "public"
+                    :nrepl-port       7002
+                    :css-dirs         ["resources/public/css"]}
+                   :doo            {:build "test"}
+                   :source-paths   ["env/dev/clj" "test/clj"]
+                   :resource-paths ["env/dev/resources"]
+                   :repl-options   {:init-ns user
+                                    :nrepl-middleware
+                                    [cemerick.piggieback/wrap-cljs-repl]}
+                   :injections     [(require 'pjstadig.humane-test-output)
+                                    (pjstadig.humane-test-output/activate!)]}
+   :project/test  {:resource-paths ["env/dev/resources" "env/test/resources"]}
+   :profiles/dev  {}
    :profiles/test {}})
