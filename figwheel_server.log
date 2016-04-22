@@ -89,3 +89,23 @@ notifying browser that file changed:  out/swagger_service/core.js
 [0mCompiling "target/cljsbuild/public/js/app.js" from ("src/cljc" "src/cljs" "env/dev/cljs")...
 notifying browser that file changed:  out/swagger_service/core.js
 [32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.154 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ("src/cljc" "src/cljs" "env/dev/cljs")...
+notifying browser that file changed:  out/swagger_service/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.161 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ("src/cljc" "src/cljs" "env/dev/cljs")...
+WARNING: Use of undeclared Var swagger-service.core/partitial-all at line 22 /Users/ryanyogan/dev/swagger-service/src/cljs/swagger_service/core.cljs
+notifying browser that file changed:  out/swagger_service/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.276 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ("src/cljc" "src/cljs" "env/dev/cljs")...
+WARNING: Use of undeclared Var swagger-service.core/partitial-all at line 22 /Users/ryanyogan/dev/swagger-service/src/cljs/swagger_service/core.cljs
+notifying browser that file changed:  out/swagger_service/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.215 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ("src/cljc" "src/cljs" "env/dev/cljs")...
+notifying browser that file changed:  out/swagger_service/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.188 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ("src/cljc" "src/cljs" "env/dev/cljs")...
+notifying browser that file changed:  out/swagger_service/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.175 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ("src/cljc" "src/cljs" "env/dev/cljs")...
+notifying browser that file changed:  out/swagger_service/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.192 seconds.[0m
